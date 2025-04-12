@@ -1,0 +1,131 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\murat\\Documents\\Visual Studio 2022\\Mvc\\Mvc_Proje\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F19A5F9F-DD81-4B32-9DC1-27576307464E}|Mvc_Proje.csproj|c:\\users\\murat\\documents\\visual studio 2022\\mvc\\mvc_proje\\views\\heading\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F19A5F9F-DD81-4B32-9DC1-27576307464E}|Mvc_Proje.csproj|solutionrelative:views\\heading\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F19A5F9F-DD81-4B32-9DC1-27576307464E}|Mvc_Proje.csproj|c:\\users\\murat\\documents\\visual studio 2022\\mvc\\mvc_proje\\controllers\\headingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F19A5F9F-DD81-4B32-9DC1-27576307464E}|Mvc_Proje.csproj|solutionrelative:controllers\\headingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F19A5F9F-DD81-4B32-9DC1-27576307464E}|Mvc_Proje.csproj|c:\\users\\murat\\documents\\visual studio 2022\\mvc\\mvc_proje\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F19A5F9F-DD81-4B32-9DC1-27576307464E}|Mvc_Proje.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF168A41-EED9-48F1-B06A-CB9667A182D7}|..\\EntityLayer\\EntityLayer.csproj|c:\\users\\murat\\documents\\visual studio 2022\\mvc\\entitylayer\\concrete\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D2A520A-C1FE-436C-9228-6E9D6DB3149A}|..\\DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\murat\\documents\\visual studio 2022\\mvc\\dataaccesslayer\\concrete\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 283,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\murat\\Documents\\Visual Studio 2022\\Mvc\\Mvc_Proje\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\murat\\Documents\\Visual Studio 2022\\Mvc\\Mvc_Proje\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAFIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T15:03:58.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Context.cs",
+              "DocumentMoniker": "C:\\Users\\murat\\Documents\\Visual Studio 2022\\Mvc\\DataAccessLayer\\Concrete\\Context.cs",
+              "RelativeDocumentMoniker": "..\\DataAccessLayer\\Concrete\\Context.cs",
+              "ToolTip": "C:\\Users\\murat\\Documents\\Visual Studio 2022\\Mvc\\DataAccessLayer\\Concrete\\Context.cs",
+              "RelativeToolTip": "..\\DataAccessLayer\\Concrete\\Context.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwCYAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T13:23:52.724Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Admin.cs",
+              "DocumentMoniker": "C:\\Users\\murat\\Documents\\Visual Studio 2022\\Mvc\\EntityLayer\\Concrete\\Admin.cs",
+              "RelativeDocumentMoniker": "..\\EntityLayer\\Concrete\\Admin.cs",
+              "ToolTip": "C:\\Users\\murat\\Documents\\Visual Studio 2022\\Mvc\\EntityLayer\\Concrete\\Admin.cs",
+              "RelativeToolTip": "..\\EntityLayer\\Concrete\\Admin.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAADgvw8AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T12:35:37.795Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\murat\\Documents\\Visual Studio 2022\\Mvc\\Mvc_Proje\\Views\\Heading\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Heading\\Index.cshtml",
+              "ToolTip": "C:\\Users\\murat\\Documents\\Visual Studio 2022\\Mvc\\Mvc_Proje\\Views\\Heading\\Index.cshtml",
+              "RelativeToolTip": "Views\\Heading\\Index.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAABsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T12:53:16.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HeadingController.cs",
+              "DocumentMoniker": "C:\\Users\\murat\\Documents\\Visual Studio 2022\\Mvc\\Mvc_Proje\\Controllers\\HeadingController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HeadingController.cs",
+              "ToolTip": "C:\\Users\\murat\\Documents\\Visual Studio 2022\\Mvc\\Mvc_Proje\\Controllers\\HeadingController.cs",
+              "RelativeToolTip": "Controllers\\HeadingController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T12:53:12.201Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 263,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1524,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1524,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

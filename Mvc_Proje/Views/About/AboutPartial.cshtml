@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Modal Test</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+	<button class="btn btn-info" style="align-items:center" data-toggle="modal" data-target="#Modal1">
+		Yeni Hakkımda Girişi
+	</button>
+
+	<div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h2 class="modal-title" id="ModalLabel">Hakkımda Gerekli Bilgiler</h2>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				
+				<form method="post" action="/About/AddAbout/">
+				
+					<div class="modal-body">
+						<label>Hakkımda Metni 1</label>
+						<input type="text" name="AboutDetails1" class="form-control" />
+						<br />
+						<label>Hakkımda Metni 2</label>
+						<input type="text" name="AboutDetails2" class="form-control" />
+						<br />
+						<label>Hakkımda Görsel 1</label>
+						<input type="text" name="AboutImage1" class="form-control" />
+						<br />
+						<label>Hakkımda Görsel 2</label>
+						<input type="text" name="AboutImage2" class="form-control" />
+						<br />
+						<button type="submit" class="btn btn-primary">Kaydet</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

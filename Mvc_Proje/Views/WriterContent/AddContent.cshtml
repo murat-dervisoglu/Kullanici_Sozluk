@@ -1,0 +1,113 @@
+﻿@model Mvc_Proje.ViewModels.ContentViewModel
+
+@{
+    ViewData["Title"] = "AddContent";
+    Layout = "~/Views/Shared/_WriterLayout.cshtml";
+}
+
+@using (Html.BeginForm("AddContent", "WriterContent", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <br />
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow-lg border-0">
+                    <div class="card-header bg-dark text-white">
+                        <h4 class="text-center mb-0">@Model.Heading.HeadingName için yazıyorsunuz</h4>
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="mb-4">
+                            @Html.HiddenFor(x => x.Content.HeadingID)
+                            @Html.Label("ContentValue", "Yorumunuz:", new { @class = "form-label fw-bold" })
+                            @Html.TextAreaFor(x => x.Content.ContentValue, 4, 30, new { @class = "form-control rounded-0", placeholder = "Bu konu hakkında ne düşünüyorsun" })
+                            @Html.ValidationMessageFor(x => x.Content.ContentValue)
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary">Kaydet</button>
+                            <button type="button" class="btn btn-light" onclick="history.back()">Geri</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+
+
+@* @model EntityLayer.Concrete.Content
+
+@{
+    ViewData["Title"] = "AddContent";
+    Layout = "~/Views/Shared/_WriterLayout.cshtml";
+}
+
+@using (Html.BeginForm("AddContent", "WriterContent", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <br />
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow-lg border-0">
+                    <div class="card-header bg-dark text-white">
+                        <h4 class="text-center mb-0">🖋️  @Model.Heading.HeadingName için yazıyorsunuz</h4>
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="mb-4">
+                            @Html.HiddenFor(x => x.HeadingID)
+                            @Html.Label("ContentValue", "Yorumunuz:", new { @class = "form-label fw-bold" })
+                            @Html.TextAreaFor(x => x.ContentValue, 4, 30, new { @class = "form-control rounded-pill", placeholder = "Bu konu hakkında ne düşünüyorsun" })
+                            @Html.ValidationMessageFor(x => x.ContentValue)
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary">Kaydet</button>
+                            <button type="button" class="btn btn-light" onclick="history.back()">Geri</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+} 
+*@
+
+
+
+@* 
+@model EntityLayer.Concrete.Content
+
+@{
+    ViewData["Title"] = "AddContent";
+    Layout = "~/Views/Shared/_WriterLayout.cshtml";
+}
+
+@using (Html.BeginForm("AddContent", "WriterContent", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <br />
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow-lg border-0">
+                    <div class="card-header bg-dark text-white">
+                        <h4 class="text-center mb-0">🖋️ @Html.TextBoxFor( x=>x.Heading.HeadingName+ " için yazıyorsunuz") </h4>
+                    </div>
+                    <div class="card-body p-4">
+                        <form>
+                            <div class="mb-4">
+                                @Html.HiddenFor(x => x.HeadingID)
+                                <h4 class="text-center mb-0">🖋️  @Html.TextBoxFor( x=>x.Heading.HeadingName)   için yazıyorsunuz </h4>
+                                @Html.Label("HeadingName", "Yorumunuz:", new { @class = "form-label fw-bold" })
+                                @Html.TextAreaFor(x => x.ContentValue,4,30, new { @class = "form-control rounded-pill", placeholder = "Bu konu hakkında ne düşünüyorsun" })
+                                @Html.ValidationMessageFor(x => x.ContentValue)
+                            </div>
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-primary">Kaydet</button>
+                                <button type="button" class="btn btn-light" onclick="history.back()">Geri</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+} *@

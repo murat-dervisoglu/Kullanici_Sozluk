@@ -1,0 +1,63 @@
+﻿@model EntityLayer.Concrete.Writer
+@{
+    ViewData["Title"] = "AddWriter";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@using (Html.BeginForm("AddWriter", "Writer", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow-lg border-0">
+                    <div class="card-header bg-dark text-white">
+                        <h4 class="text-center mb-0">🖋️ Yeni Yazar Ekle</h4>
+                    </div>
+                    <div class="card-body p-4">
+                        <form>
+                            <div class="mb-4">
+                                @Html.Label("WriterName", "Yazar Adı", new { @class = "form-label fw-bold" })
+                                @Html.TextBoxFor(x => x.WriterName, new { @class = "form-control rounded-pill", placeholder = "Adınızı girin" })
+                                @Html.ValidationMessageFor(x => x.WriterName)
+                            </div>
+
+                            <div class="mb-4">
+                                @Html.Label("WriterSurname", "Yazar Soyadı", new { @class = "form-label fw-bold" })
+                                @Html.TextBoxFor(x => x.WriterSurname, new { @class = "form-control rounded-pill", placeholder = "Soyadınızı girin" })
+                                @Html.ValidationMessageFor(x => x.WriterSurname)
+                            </div>
+
+                            <div class="mb-4">
+                                @Html.Label("WriterImg", "Profil Fotoğrafı", new { @class = "form-label fw-bold" })
+                                <input type="text" name="WriterImg" class="form-control rounded-pill" />
+                                @Html.ValidationMessageFor(x => x.WriterImg)
+                            </div>
+
+                            <div class="mb-4">
+                                @Html.Label("WriterEmail", "E-mail Adresi", new { @class = "form-label fw-bold" })
+                                @Html.TextBoxFor(x => x.WriterEmail, new { @class = "form-control rounded-pill", placeholder = "Email adresinizi girin" })
+                                @Html.ValidationMessageFor(x => x.WriterEmail)
+                            </div>
+
+                            <div class="mb-4">
+                                @Html.Label("WriterAbout", "Yazar Hakkında", new { @class = "form-label fw-bold" })
+                                @Html.TextBoxFor(x => x.WriterAbout, new { @class = "form-control rounded-pill", placeholder = "Hakkınızda kısa bir bilgi girin" })
+                                @Html.ValidationMessageFor(x => x.WriterAbout)
+                            </div>
+
+                            <div class="mb-4">
+                                @Html.Label("WriterPassword", "Şifre", new { @class = "form-label fw-bold" })
+                                @Html.PasswordFor(x => x.WriterPassword, new { @class = "form-control rounded-pill", placeholder = "Şifrenizi girin" })
+                            </div>
+
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-primary">Kaydet</button>
+                                <button type="button" class="btn btn-light" onclick="history.back()">Geri</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

@@ -1,0 +1,114 @@
+﻿@using EntityLayer.Concrete
+@model List<Heading>
+@{
+    ViewData["Title"] = "MyHeading";
+    Layout = "~/Views/Shared/_WriterLayout.cshtml";
+}
+
+
+<html>
+
+<body class="hold-transition sidebar-mini">
+	<!-- /.navbar -->
+	<!-- Main content -->
+	<section class="content">
+		<!-- Default box -->
+		<br />
+		<div class="card">
+			<div class="card-header">
+				<h3 class="card-title">Başlıklar</h3>
+				<div class="card-tools">
+					<button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+						<i class="fas fa-minus"></i>
+					</button>
+				</div>
+			</div>
+			<div class="card-body p-0">
+				<table class="table table-striped projects">
+					<thead>
+						<tr>
+							<th style="width: 5%;">
+								#
+							</th>
+							<th style="width: 15%;">
+								Başlık
+							</th>
+							<th style="width: 30%;">
+								Başlığı Oluşturan
+							</th>
+							<th style="width: 20%; text-align: center;">
+								<span style="margin-block-start: 30px;">Kategori</span>
+							</th>
+							<th style="width: 30%; text-align: center;">
+								İşlemler
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						@foreach (var item in Model)
+						{
+							<tr>
+								<td>
+									@item.HeadingID
+								</td>
+								<td>
+									<a>
+										@item.HeadingName
+									</a>
+									<br />
+									<small>
+										@(((DateTime)item.HeadingDate).ToString("dd-MMM-yyyy"))
+									</small>
+								</td>
+								<td>
+									<ul class="list-inline">
+										<li class="list-inline-item">
+											<img class="table-avatar" src="@item.Writer.WriterImg">
+											@item.Writer.WriterName @item.Writer.WriterSurname
+										</li>
+									</ul>
+								</td>
+								<td class="project-state" style="text-align: center;">
+									<p style="color: red; border: 1px solid black; padding: 10px; width: 150px; margin: 0 auto;">
+										@item.Category.CategoryName
+									</p>
+								</td>
+								<td class="project-actions text-center">
+									@if (item.HeadingStatus == false)
+									{
+										<a href="/Heading/ReGetHeading/@item.HeadingID" style="color:white; background-color: orange; border: 1px solid black; padding: 10px; width: 200px; margin: 0 auto;">
+											Aktif Değil. Aktif Et
+										</a>
+									}
+									else
+									{
+										<a class="btn btn-primary btn-sm" href="/Content/ContentByHeading/@item.HeadingID">
+											<i class="fas fa-folder">
+											</i>
+											Git
+										</a>
+										<a class="btn btn-info btn-sm" href="/WriterPanel/EditHeading/@item.HeadingID">
+											<i class="fas fa-pencil-alt">
+											</i>
+											Düzenle
+										</a>
+										<a class="btn btn-danger btn-sm" href="/WriterPanel/DeleteHeading/@item.HeadingID" onclick="return confirm('Silmek istediğinize emin misiniz?');">
+											<i class="fas fa-trash">
+											</i>
+											Sil
+										</a>
+									}
+								</td>
+							</tr>
+						}
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<a href="/WriterPanel/NewHeading/" class="btn btn-outline-info">Başlık Ekle</a>
+		<br />
+	</section>
+</body> 
+
+
+</html>

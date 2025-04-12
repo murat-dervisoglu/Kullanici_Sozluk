@@ -1,0 +1,14 @@
+C:\Users\murat\Documents\Visual Studio 2022\Mvc\EntityLayer\bin\Debug\net9.0\EntityLayer.deps.json
+C:\Users\murat\Documents\Visual Studio 2022\Mvc\EntityLayer\bin\Debug\net9.0\EntityLayer.dll
+C:\Users\murat\Documents\Visual Studio 2022\Mvc\EntityLayer\bin\Debug\net9.0\EntityLayer.pdb
+C:\Users\murat\Documents\Visual Studio 2022\Mvc\EntityLayer\obj\Debug\net9.0\EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\murat\Documents\Visual Studio 2022\Mvc\EntityLayer\obj\Debug\net9.0\EntityLayer.AssemblyInfoInputs.cache
+C:\Users\murat\Documents\Visual Studio 2022\Mvc\EntityLayer\obj\Debug\net9.0\EntityLayer.AssemblyInfo.cs
+C:\Users\murat\Documents\Visual Studio 2022\Mvc\EntityLayer\obj\Debug\net9.0\EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\murat\Documents\Visual Studio 2022\Mvc\EntityLayer\obj\Debug\net9.0\EntityLayer.dll
+C:\Users\murat\Documents\Visual Studio 2022\Mvc\EntityLayer\obj\Debug\net9.0\refint\EntityLayer.dll
+C:\Users\murat\Documents\Visual Studio 2022\Mvc\EntityLayer\obj\Debug\net9.0\EntityLayer.pdb
+C:\Users\murat\Documents\Visual Studio 2022\Mvc\EntityLayer\obj\Debug\net9.0\ref\EntityLayer.dll
+C:\Users\murat\Documents\Visual Studio 2022\Mvc\EntityLayer\bin\Debug\net9.0\EntityLayer.runtimeconfig.json
+C:\Users\murat\Documents\Visual Studio 2022\Mvc\EntityLayer\obj\Debug\net9.0\EntityLayer.csproj.AssemblyReference.cache
+C:\Users\murat\Documents\Visual Studio 2022\Mvc\EntityLayer\obj\Debug\net9.0\EntityLayer.genruntimeconfig.cache

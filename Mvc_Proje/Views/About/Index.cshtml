@@ -1,0 +1,33 @@
+﻿@using EntityLayer.Concrete
+@model List<About>
+
+
+@{
+	ViewData["Title"] = "Index";
+	Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h3>Mevcut Hakkımda Verileri</h3>
+
+<div class="content">
+	<table class="table table-bordered">
+		<tr>
+
+			<th>Hakkımda Metni</th>
+			<th>Aktif Yap</th>
+			<th>Sil</th>
+		</tr>
+		@foreach (var item in Model)
+		{
+			<tr>
+				<td>metin</td>
+				<td><a href="#" class="btn btn-warning">Aktif</a></td>
+				<td><a href="#" class="btn btn-danger">Pasif</a></td>
+			</tr>
+		}
+	</table>
+</div>
+ 
+
+
+@await Html.PartialAsync("AboutPartial")
